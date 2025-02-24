@@ -714,6 +714,9 @@ body {
 .hover\:shadow-lg:hover {
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
 }
+.hover\:text-yellow-400:hover{
+    color: #f3c041;
+}
 
 strong {
     display: block;
