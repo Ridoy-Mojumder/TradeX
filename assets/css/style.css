@@ -1011,6 +1011,9 @@ img {
     .md\:grid-cols-2 {
         grid-template-columns: repeat(2, 1fr);
     }
+    .md\:hidden{
+        display: none;
+    }
 
     .md\:grid-cols-3 {
         grid-template-columns: repeat(3, 1fr);
