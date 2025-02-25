@@ -1171,6 +1171,9 @@ img {
   .lg\:grid-cols-5 {
     grid-template-columns: repeat(5, 1fr);
   }
+  .lg\:text-lg {
+    font-size: 16px;
+  }
   .lg\:text-xl {
     font-size: 20px;
   }
