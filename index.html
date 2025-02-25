@@ -1,1544 +1,2618 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TRASEX</title>
 
     <!-- Google Fonts: Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS Styles -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/Banner.css">
-    <link rel="stylesheet" href="./assets/css/values.css">
-    <link rel="stylesheet" href="./assets/css/features.css">
-    <link rel="stylesheet" href="./assets/css/tabs.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/Banner.css" />
+    <link rel="stylesheet" href="./assets/css/values.css" />
+    <link rel="stylesheet" href="./assets/css/features.css" />
+    <link rel="stylesheet" href="./assets/css/tabs.css" />
 
     <!-- Iconify for Icons -->
     <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- Nav section start -->
     <header class="header-area bg-gray-900 text-white">
-        <div class="container px-6">
-            <div class="flex justify-between items-center py-4">
-                <!-- Logo -->
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="./assets/images/logo.png" alt="Logo" class="w-32">
-                    </a>
-                </div>
-    
-                <!-- Hamburger Icon for Mobile -->
-                <div class="md:hidden ">
-                    <button id="menuIcon" class="text-2xl border-0 bg-white right-0">
-                        ☰
-                    </button>
-                </div>
-    
-                <!-- Navigation -->
-                <nav>
-                    <ul id="navLinks"
-                        class="hidden md:flex items-center gap-6 text-lg transition-all ease-in-out duration-300">
-                        <li><a href="#" class="active no-underline font-semibold text-yellow-500">Home</a></li>
-                        <li><a href="#" class="no-underline text-gray-400 font-semibold hover:text-yellow-400">About</a></li>
-                        <li><a href="#" class="no-underline text-gray-400 font-semibold hover:text-yellow-400">Services</a></li>
-                        <li><a href="#" class="no-underline text-gray-400 font-semibold hover:text-yellow-400">Pricing</a></li>
-                        <li><a href="#" class="no-underline text-gray-400 font-semibold hover:text-yellow-400">Contact</a></li>
-                        <li>
-                            <a href="index.html">
-                                <span class="iconify custom-icon text-gray-400 font-semibold hover:text-yellow-400"
-                                    data-icon="mdi:home"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <button class="btn">
-                                    Get Started
-                                </button>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    
-        <!-- Mobile Menu -->
-        <div id="mobileMenu"
-            class="absolute top-0 left-0 w-full bg-white text-white flex flex-col items-center gap-4 py-6 hidden">
-            <a href="#" class="font-semibold no-underline  text-lg hover:text-yellow-400">Home</a>
-            <a href="#" class="font-semibold no-underline  text-lg hover:text-yellow-400">About</a>
-            <a href="#" class="font-semibold  no-underline text-lg hover:text-yellow-400">Services</a>
-            <a href="#" class="font-semibold no-underline  text-lg hover:text-yellow-400">Pricing</a>
-            <a href="#" class="font-semibold no-underline  text-lg hover:text-yellow-400">Contact</a>
+      <div class="container px-6">
+        <div class="flex justify-between items-center py-4">
+          <!-- Logo -->
+          <div class="logo">
             <a href="index.html">
-                <span class="iconify text-lg hover:text-yellow-400" data-icon="mdi:home"></span>
+              <img src="./assets/images/logo.png" alt="Logo" class="w-32" />
             </a>
-            <a href="#">
-                <button class="btn mt-4 flex items-center">
-                    <div class="flex justify-center items-center gap-2">
-                        Get Started
-                        <span class="iconify" data-icon="mdi:arrow-right"></span>
-                    </div>
+          </div>
+
+          <!-- Navigation -->
+          <nav>
+            <ul
+              id="navLinks"
+              class="flex items-center gap-6 text-lg transition-all ease-in-out duration-300"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="active hidden md:flex no-underline font-semibold text-yellow-500"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hidden md:flex no-underline text-gray-400 font-semibold hover:text-yellow-400"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hidden md:flex no-underline text-gray-400 font-semibold hover:text-yellow-400"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hidden md:flex no-underline text-gray-400 font-semibold hover:text-yellow-400"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hidden md:flex no-underline text-gray-400 font-semibold hover:text-yellow-400"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a href="index.html">
+                  <span
+                    class="iconify custom-icon text-gray-400 font-semibold hover:text-yellow-400"
+                    data-icon="mdi:home"
+                  ></span>
+                </a>
+              </li>
+              <!-- Hamburger Icon for Mobile -->
+              <div class="md:hidden">
+                <button
+                  id="menuIcon"
+                  class="text-2xl border-0 bg-white right-0"
+                >
+                  ☰
                 </button>
-            </a>
+              </div>
+              <li>
+                <a href="#" class="hidden md:flex no-underline">
+                  <button class="btn ">Get Started</button>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobileMenu"
+        class="absolute top-0 left-0 w-full bg-white text-gray-400 flex flex-col items-center gap-4 py-6 hidden"
+      >
+        <a
+          href="#"
+          class="font-semibold no-underline text-gray-400 text-lg hover:text-yellow-400"
+          >Home</a
+        >
+        <a
+          href="#"
+          class="font-semibold no-underline text-gray-400 text-lg hover:text-yellow-400"
+          >About</a
+        >
+        <a
+          href="#"
+          class="font-semibold no-underline text-gray-400 text-lg hover:text-yellow-400"
+          >Services</a
+        >
+        <a
+          href="#"
+          class="font-semibold no-underline text-gray-400 text-lg hover:text-yellow-400"
+          >Pricing</a
+        >
+        <a
+          href="#"
+          class="font-semibold no-underline text-gray-400 text-lg hover:text-yellow-400"
+          >Contact</a
+        >
+
+        <a href="#">
+          <button class="btn mt-4 flex items-center">
+            <div class="flex justify-center items-center gap-2">
+              Get Started
+              <span class="iconify" data-icon="mdi:arrow-right"></span>
+            </div>
+          </button>
+        </a>
+      </div>
     </header>
     <!-- Nav Section End -->
 
     <!-- Banner Section Start -->
     <section class="banner flex items-center">
-        <div class="container">
-            <div class="banner-inner flex flex-col lg:flex-row justify-between items-center">
-                <div class="banner-content">
-                    <h1 class="">We offer modern solutions for growing your business</h1>
-                    <p>We are a team of talented designers making websites with Bootstrap</p>
-                    <button class="btn mt-4 flex items-center">
-                        <div class="flex justify-center items-center gap-2">
-                            Get Started
-                            <span class="iconify" data-icon="mdi:arrow-right"></span>
-                        </div>
-                    </button>
-                </div>
-                <div class="banner-image flex justify-end mt-4 lg:mt-0">
-                    <img src="./assets/images/bannerRight.png" alt="Right Image">
-                </div>
-            </div>
+      <div class="container">
+        <div
+          class="banner-inner flex flex-col lg:flex-row justify-between items-center"
+        >
+          <div class="banner-content">
+            <h1 class="">
+              We offer modern solutions for growing your business
+            </h1>
+            <p>
+              We are a team of talented designers making websites with Bootstrap
+            </p>
+            <button class="btn mt-4 flex items-center">
+              <div class="flex justify-center items-center gap-2">
+                Get Started
+                <span class="iconify" data-icon="mdi:arrow-right"></span>
+              </div>
+            </button>
+          </div>
+          <div class="banner-image flex justify-end mt-4 lg:mt-0">
+            <img src="./assets/images/bannerRight.png" alt="Right Image" />
+          </div>
         </div>
+      </div>
     </section>
-    
+
     <!-- Banner Section End -->
 
     <!-- Who Section Start -->
     <section class="py-12">
-        <div class="container">
-            <div class="md:flex justify-between items-center space-x-0">
-                <div class="bg-gray-100 text-left p-8 md:w-1/2">
-                    <h2 class="text-2xl text-yellow-500">Who we are</h2>
-                    <h2 class="text-xl font-bold my-4">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis commodo nulla consectetur in
-                        lorem at
-                        mi.
-                    </h2>
-                    <p class="text-lg text-gray-400">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Senectus consequat turpis eget egestas
-                        proin
-                        nunc tristique. Lobortis posuere in viverra vulputate et velit.
-                    </p>
-                    <button class="btn mt-4 flex items-center">
-                        <div class="flex justify-center items-center gap-2">
-                            Read more
-                            <span class="iconify" data-icon="mdi:arrow-right"></span>
-                        </div>
-                    </button>
-                </div>
-                <div class="whoSection-image md:w-1/2 flex justify-center">
-                    <img src="./assets/images/whoWeAre.png" alt="Who We Are" class=" ">
-                </div>
-            </div>
+      <div class="container">
+        <div class="md:flex justify-between items-center space-x-0">
+          <div class="bg-gray-100 text-left p-8 md:w-1/2">
+            <h2 class="text-2xl text-yellow-500">Who we are</h2>
+            <h2 class="text-xl font-bold my-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis
+              commodo nulla consectetur in lorem at mi.
+            </h2>
+            <p class="text-lg text-gray-400">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Senectus
+              consequat turpis eget egestas proin nunc tristique. Lobortis
+              posuere in viverra vulputate et velit.
+            </p>
+            <button class="btn mt-4 flex items-center">
+              <div class="flex justify-center items-center gap-2">
+                Read more
+                <span class="iconify" data-icon="mdi:arrow-right"></span>
+              </div>
+            </button>
+          </div>
+          <div class="whoSection-image md:w-1/2 flex justify-center">
+            <img
+              src="./assets/images/whoWeAre.png"
+              alt="Who We Are"
+              class=" "
+            />
+          </div>
         </div>
+      </div>
     </section>
     <!-- Who Section End -->
 
     <!-- Values Section Start -->
     <section class="py-12">
-        <div class="container">
-            <h2 class=" text-center text-yellow-500 mb-2">OUR VALUES</h2>
-            <h2 class=" text-center ">Cras donec in porta aliquet
-                facilisi.</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 place-center text-center my-8">
-                <div class="card2 bg-white p-6 shadow-md w-full my-4 text-center flex flex-col items-center">
-                    <img src="./assets/images/valuesImage-1.png" alt="Value 1" class="w-64 h-64 mb-4">
-                    <strong class="block text-gray-800 text-lg mb-2">Lorem ipsum dolor sit amet</strong>
-                    <small class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing</small>
-                </div>
+      <div class="container">
+        <h2 class="text-center text-yellow-500 mb-2">OUR VALUES</h2>
+        <h2 class="text-center">Cras donec in porta aliquet facilisi.</h2>
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-8 place-center text-center my-8"
+        >
+          <div
+            class="card2 bg-white p-6 shadow-md w-full my-4 text-center flex flex-col items-center"
+          >
+            <img
+              src="./assets/images/valuesImage-1.png"
+              alt="Value 1"
+              class="w-64 h-64 mb-4"
+            />
+            <strong class="block text-gray-800 text-lg mb-2"
+              >Lorem ipsum dolor sit amet</strong
+            >
+            <small class="text-gray-600"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing</small
+            >
+          </div>
 
-                <div class="card2 bg-white p-6 shadow-md w-full my-4 text-center flex flex-col items-center">
-                    <img src="./assets/images/valuesImage-2.png" alt="Value 2" class="w-82 h-64 mb-4">
-                    <strong class="block text-gray-800 text-lg mb-2">Lorem ipsum dolor sit amet</strong>
-                    <small class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing</small>
-                </div>
-                <div class="card2 bg-white p-6 shadow-md w-full my-4 text-center flex flex-col items-center">
-                    <img src="./assets/images/valuesImage-3.png" alt="Value 3" class="w-64 h-64 mb-4">
-                    <strong class="block text-gray-800 text-lg mb-2">Lorem ipsum dolor sit amet</strong>
-                    <small class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing</small>
-                </div>
-            </div>
-
-            <div class=" grid grid-cols-2 md:grid-cols-4 gap-8 my-8">
-                <div class="stat-box bg-white p-4 shadow-md text-center">
-                    <img src="./assets/images/valueIcon-1.png" alt="Happy Clients" class="w-10 h-10 mx-auto mt-4">
-                    <div class="text-left">
-                        <h1 class="text-3xl font-bold text-gray-900 mb-2">231</h1>
-                        <small class="text-gray-600">Happy Clients</small>
-                    </div>
-                </div>
-                <div class="stat-box bg-white p-4 shadow-md text-center">
-                    <img src="./assets/images/valueIcon-2.png" alt="Projects" class="w-14 h-10 mx-auto mt-4">
-                    <div class="text-left">
-                        <h1 class="text-3xl font-bold text-gray-900 mb-2">521</h1>
-                        <small class="text-gray-600">Projects</small>
-                    </div>
-                </div>
-                <div class="stat-box bg-white p-4 shadow-md text-center">
-                    <img src="./assets/images/valueIcon-3.png" alt="Hours of Support" class="w-10 h-10 mx-auto mt-4">
-                    <div class="text-left w-2/3">
-                        <h1 class="text-3xl font-bold text-gray-900 mb-2">1464</h1>
-                        <small class="text-gray-600">Hours of Support</small>
-                    </div>
-                </div>
-                <div class="stat-box bg-white p-4 shadow-md text-center">
-                    <img src="./assets/images/valueIcon-4.png" alt="Hard Workers" class="w-10 h-10 mx-auto mt-4">
-                    <div class="text-left">
-                        <h1 class="text-3xl font-bold text-gray-900 mb-2">231</h1>
-                        <small class="text-gray-600">Hard Workers</small>
-                    </div>
-                </div>
-            </div>
+          <div
+            class="card2 bg-white p-6 shadow-md w-full my-4 text-center flex flex-col items-center"
+          >
+            <img
+              src="./assets/images/valuesImage-2.png"
+              alt="Value 2"
+              class="w-82 h-64 mb-4"
+            />
+            <strong class="block text-gray-800 text-lg mb-2"
+              >Lorem ipsum dolor sit amet</strong
+            >
+            <small class="text-gray-600"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing</small
+            >
+          </div>
+          <div
+            class="card2 bg-white p-6 shadow-md w-full my-4 text-center flex flex-col items-center"
+          >
+            <img
+              src="./assets/images/valuesImage-3.png"
+              alt="Value 3"
+              class="w-64 h-64 mb-4"
+            />
+            <strong class="block text-gray-800 text-lg mb-2"
+              >Lorem ipsum dolor sit amet</strong
+            >
+            <small class="text-gray-600"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing</small
+            >
+          </div>
         </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 md:grid-cols-4 gap-8 my-8">
+          <div class="stat-box bg-white p-4 shadow-md text-center">
+            <img
+              src="./assets/images/valueIcon-1.png"
+              alt="Happy Clients"
+              class="w-10 h-10 mx-auto mt-4"
+            />
+            <div class="text-left">
+              <h1 class="text-3xl font-bold text-gray-900 mb-2">231</h1>
+              <small class="text-gray-600">Happy Clients</small>
+            </div>
+          </div>
+          <div class="stat-box bg-white p-4 shadow-md text-center">
+            <img
+              src="./assets/images/valueIcon-2.png"
+              alt="Projects"
+              class="w-14 h-10 mx-auto mt-4"
+            />
+            <div class="text-left">
+              <h1 class="text-3xl font-bold text-gray-900 mb-2">521</h1>
+              <small class="text-gray-600">Projects</small>
+            </div>
+          </div>
+          <div class="stat-box bg-white p-4 shadow-md text-center">
+            <img
+              src="./assets/images/valueIcon-3.png"
+              alt="Hours of Support"
+              class="w-10 h-10 mx-auto mt-4"
+            />
+            <div class="text-left w-2/3">
+              <h1 class="text-3xl font-bold text-gray-900 mb-2">1464</h1>
+              <small class="text-gray-600">Hours of Support</small>
+            </div>
+          </div>
+          <div class="stat-box bg-white p-4 shadow-md text-center">
+            <img
+              src="./assets/images/valueIcon-4.png"
+              alt="Hard Workers"
+              class="w-10 h-10 mx-auto mt-4"
+            />
+            <div class="text-left">
+              <h1 class="text-3xl font-bold text-gray-900 mb-2">231</h1>
+              <small class="text-gray-600">Hard Workers</small>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Values Section End -->
 
-
     <!-- Features Section Start -->
     <section class="py-12">
-        <div class="container">
-            <h2 class="text-center text-yellow-500 mb-2">FEATURES</h2>
-            <h2 class="text-center">Cras donec in porta aliquet facilisi.</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-8">
-                <div class="flex justify-center md:justify-start">
-                    <img src="./assets/images/featuresImage.png" alt="Features" class="">
-                </div>
-                <div class="grid grid-cols-2 gap-5 text-left p-6">
-                    <div class="flex items-center gap-3 shadow p-4 rounded-lg bg-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
-                            class="iconify mr-4 text-xl bg-gray-100 text-yellow-500" viewBox="0 0 20 20">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M16.705 4.153a.75.75 0 0 1 .142 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893l7.48-9.817a.75.75 0 0 1 1.05-.143"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-gray-800 text-md font-bold">Lorem ipsum dolor sit amet</p>
-                    </div>
-                    <div class="flex items-center gap-3 shadow p-4 rounded-lg bg-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
-                            class="iconify mr-4 text-xl bg-gray-100 text-yellow-500" viewBox="0 0 20 20">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M16.705 4.153a.75.75 0 0 1 .142 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893l7.48-9.817a.75.75 0 0 1 1.05-.143"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-gray-800 text-md font-bold">Lorem ipsum dolor sit amet</p>
-                    </div>
-                    <div class="flex items-center gap-3 shadow p-4 rounded-lg bg-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
-                            class="iconify mr-4 text-xl bg-gray-100 text-yellow-500" viewBox="0 0 20 20">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M16.705 4.153a.75.75 0 0 1 .142 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893l7.48-9.817a.75.75 0 0 1 1.05-.143"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-gray-800 text-md font-bold">Lorem ipsum dolor sit amet</p>
-                    </div>
-                    <div class="flex items-center gap-3 shadow p-4 rounded-lg bg-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
-                            class="iconify mr-4 text-xl bg-gray-100 text-yellow-500" viewBox="0 0 20 20">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M16.705 4.153a.75.75 0 0 1 .142 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893l7.48-9.817a.75.75 0 0 1 1.05-.143"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-gray-800 text-md font-bold">Lorem ipsum dolor sit amet</p>
-                    </div>
-                    <div class="flex items-center gap-3 shadow p-4 rounded-lg bg-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
-                            class="iconify mr-4 text-xl bg-gray-100 text-yellow-500" viewBox="0 0 20 20">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M16.705 4.153a.75.75 0 0 1 .142 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893l7.48-9.817a.75.75 0 0 1 1.05-.143"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-gray-800 text-md font-bold">Lorem ipsum dolor sit amet</p>
-                    </div>
-                    <div class="flex items-center gap-3 shadow p-4 rounded-lg bg-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
-                            class="iconify mr-4 text-xl bg-gray-100 text-yellow-500" viewBox="0 0 20 20">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M16.705 4.153a.75.75 0 0 1 .142 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893l7.48-9.817a.75.75 0 0 1 1.05-.143"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-gray-800 text-md font-bold">Lorem ipsum dolor sit amet</p>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="text-center text-yellow-500 mb-2">FEATURES</h2>
+        <h2 class="text-center">Cras donec in porta aliquet facilisi.</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-8">
+          <div class="flex justify-center md:justify-start">
+            <img
+              src="./assets/images/featuresImage.png"
+              alt="Features"
+              class=""
+            />
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5 text-left p-6">
+            <div class="flex items-center gap-3 shadow p-4 rounded-lg bg-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                class="iconify mr-4 text-xl bg-gray-100 text-yellow-500"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M16.705 4.153a.75.75 0 0 1 .142 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893l7.48-9.817a.75.75 0 0 1 1.05-.143"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-gray-800 text-md font-bold">
+                Lorem ipsum dolor sit amet
+              </p>
             </div>
+            <div class="flex items-center gap-3 shadow p-4 rounded-lg bg-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                class="iconify mr-4 text-xl bg-gray-100 text-yellow-500"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M16.705 4.153a.75.75 0 0 1 .142 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893l7.48-9.817a.75.75 0 0 1 1.05-.143"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-gray-800 text-md font-bold">
+                Lorem ipsum dolor sit amet
+              </p>
+            </div>
+            <div class="flex items-center gap-3 shadow p-4 rounded-lg bg-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                class="iconify mr-4 text-xl bg-gray-100 text-yellow-500"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M16.705 4.153a.75.75 0 0 1 .142 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893l7.48-9.817a.75.75 0 0 1 1.05-.143"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-gray-800 text-md font-bold">
+                Lorem ipsum dolor sit amet
+              </p>
+            </div>
+            <div class="flex items-center gap-3 shadow p-4 rounded-lg bg-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                class="iconify mr-4 text-xl bg-gray-100 text-yellow-500"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M16.705 4.153a.75.75 0 0 1 .142 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893l7.48-9.817a.75.75 0 0 1 1.05-.143"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-gray-800 text-md font-bold">
+                Lorem ipsum dolor sit amet
+              </p>
+            </div>
+            <div class="flex items-center gap-3 shadow p-4 rounded-lg bg-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                class="iconify mr-4 text-xl bg-gray-100 text-yellow-500"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M16.705 4.153a.75.75 0 0 1 .142 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893l7.48-9.817a.75.75 0 0 1 1.05-.143"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-gray-800 text-md font-bold">
+                Lorem ipsum dolor sit amet
+              </p>
+            </div>
+            <div class="flex items-center gap-3 shadow p-4 rounded-lg bg-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                class="iconify mr-4 text-xl bg-gray-100 text-yellow-500"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M16.705 4.153a.75.75 0 0 1 .142 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893l7.48-9.817a.75.75 0 0 1 1.05-.143"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-gray-800 text-md font-bold">
+                Lorem ipsum dolor sit amet
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- Features Section End -->
 
-
-
-
     <!-- tab section start -->
     <section class="py-12">
-        <div class="container">
-            <h1 class="text-2xl mb-16">
-                Cras donec in porta aliquet facilisi. Cras donec in porta aliquet facilisi. Cras donec in porta aliquet facilisi.
-            </h1>
-            
-            <div class="tabs">
-                <button class="tab-btn bg-white font-bold active" data-tab="tab1">Features 1</button>
-                <button class="tab-btn bg-white font-bold" data-tab="tab2">Features 2</button>
-                <button class="tab-btn bg-white font-bold" data-tab="tab3">Features 3</button>
-            </div>
+      <div class="container">
+        <h1 class="text-2xl mb-16">
+          Cras donec in porta aliquet facilisi. Cras donec in porta aliquet
+          facilisi. Cras donec in porta aliquet facilisi.
+        </h1>
 
-            <div class="tab-content  active" id="tab1">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 ">
-                    <!-- Left Side - Text & Features -->
-                    <div class="space-y-6">
-                        <h1 class="text-2xl font-bold text-gray-900">Features 1</h1>
-                        <p class="text-sm text-gray-600">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis pharetra commodo
-                            consectetur
-                            arcu ut pretium id in viverra. Nulla se dignissim. Dolor.
-                        </p>
-
-                        <div class="flex items-center gap-2 py-4 bg-white shadow-md rounded-lg">
-                            <span class="iconify text-xl bg-gray-100 text-yellow-500"
-                                data-icon="mdi:checkbox-marked-outline"></span>
-                            <p class="text-gray-800 text-md font-bold">
-                                Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.
-                            </p>
-                        </div>
-
-                        <p class="text-sm text-gray-600">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis pharetra commodo
-                            consectetur
-                            arcu ut pretium id in. Dolor.
-                        </p>
-
-                        <div class="flex items-center gap-2 py-4 bg-white shadow-md rounded-lg">
-                            <span class="iconify text-xl bg-gray-100 text-yellow-500"
-                                data-icon="mdi:checkbox-marked-outline"></span>
-                            <p class="text-gray-800 text-md font-bold">
-                                Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.
-                            </p>
-                        </div>
-
-                        <p class="text-sm text-gray-600">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis pharetra commodo
-                            consectetur
-                            arcu ut pretium id in viverra. Nulla sem eu vehicula senectus eget libero, dignissim.
-                            Dolor.
-                        </p>
-                    </div>
-
-                    <!-- Right Side - Image -->
-                    <div class="flex justify-center">
-                        <img src="./assets/images/tabImage.png" alt="Tab Image"
-                            class="w-full max-w-md md:max-w-full  shadow-lg">
-                    </div>
-                </div>
-            </div>
-
-            <div class="tab-content" id="tab2">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <!-- Left Side - Text & Features -->
-                    <div class="space-y-6">
-                        <h1 class="text-2xl font-bold text-gray-900">Features 2</h1>
-                        <p class="text-sm text-gray-600">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis pharetra commodo
-                            consectetur
-                            arcu ut pretium id in viverra. Nulla se dignissim. Dolor.
-                        </p>
-
-                        <div class="flex items-center gap-2 py-4 bg-white shadow-md rounded-lg">
-                            <span class="iconify text-xl bg-gray-100 text-yellow-500"
-                                data-icon="mdi:checkbox-marked-outline"></span>
-                            <p class="text-gray-800 text-md font-bold">
-                                Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.
-                            </p>
-                        </div>
-
-                        <p class="text-sm text-gray-600">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis pharetra commodo
-                            consectetur
-                            arcu ut pretium id in. Dolor.
-                        </p>
-
-                        <div class="flex items-center gap-2 py-4 bg-white shadow-md rounded-lg">
-                            <span class="iconify text-xl bg-gray-100 text-yellow-500"
-                                data-icon="mdi:checkbox-marked-outline"></span>
-                            <p class="text-gray-800 text-md font-bold">
-                                Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.
-                            </p>
-                        </div>
-
-                        <p class="text-sm text-gray-600">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis pharetra commodo
-                            consectetur
-                            arcu ut pretium id in viverra. Nulla sem eu vehicula senectus eget libero, dignissim.
-                            Dolor.
-                        </p>
-                    </div>
-
-                    <!-- Right Side - Image -->
-                    <div class="flex justify-center">
-                        <img src="./assets/images/featuresImage.png" alt="Tab Image"
-                            class="w-full max-w-md md:max-w-full shadow-lg">
-                    </div>
-                </div>
-            </div>
-
-            <div class="tab-content" id="tab3">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 ">
-                    <!-- Left Side - Text & Features -->
-                    <div class="space-y-6">
-                        <h1 class="text-2xl font-bold text-gray-900">Features 3</h1>
-                        <p class="text-sm text-gray-600">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis pharetra commodo
-                            consectetur
-                            arcu ut pretium id in viverra. Nulla se dignissim. Dolor.
-                        </p>
-
-                        <div class="flex items-center gap-2 py-4 bg-white shadow-md rounded-lg">
-                            <span class="iconify text-xl bg-gray-100 text-yellow-500"
-                                data-icon="mdi:checkbox-marked-outline"></span>
-                            <p class="text-gray-800 text-md font-bold">
-                                Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.
-                            </p>
-                        </div>
-
-                        <p class="text-sm text-gray-600">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis pharetra commodo
-                            consectetur
-                            arcu ut pretium id in. Dolor.
-                        </p>
-
-                        <div class="flex items-center gap-2 py-4 bg-white shadow-md rounded-lg">
-                            <span class="iconify text-xl bg-gray-100 text-yellow-500"
-                                data-icon="mdi:checkbox-marked-outline"></span>
-                            <p class="text-gray-800 text-md font-bold">
-                                Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.
-                            </p>
-                        </div>
-
-                        <p class="text-sm text-gray-600">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis pharetra commodo
-                            consectetur
-                            arcu ut pretium id in viverra. Nulla sem eu vehicula senectus eget libero, dignissim.
-                            Dolor.
-                        </p>
-                    </div>
-
-                    <!-- Right Side - Image -->
-                    <div class="flex justify-center">
-                        <img src="./assets/images/whoWeAre.png" alt="Tab Image"
-                            class="w-full max-w-md md:max-w-full shadow-lg">
-                    </div>
-                </div>
-            </div>
+        <div class="tabs">
+          <button class="tab-btn bg-white font-bold active" data-tab="tab1">
+            Features 1
+          </button>
+          <button class="tab-btn bg-white font-bold" data-tab="tab2">
+            Features 2
+          </button>
+          <button class="tab-btn bg-white font-bold" data-tab="tab3">
+            Features 3
+          </button>
         </div>
+
+        <div class="tab-content active" id="tab1">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Left Side - Text & Features -->
+            <div class="space-y-6">
+              <h1 class="text-2xl font-bold text-gray-900">Features 1</h1>
+              <p class="text-sm text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Facilisis pharetra commodo consectetur arcu ut pretium id in
+                viverra. Nulla se dignissim. Dolor.
+              </p>
+
+              <div
+                class="flex items-center gap-2 py-4 bg-white shadow-md rounded-lg"
+              >
+                <span
+                  class="iconify text-xl bg-gray-100 text-yellow-500"
+                  data-icon="mdi:checkbox-marked-outline"
+                ></span>
+                <p class="text-gray-800 text-md font-bold">
+                  Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.
+                </p>
+              </div>
+
+              <p class="text-sm text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Facilisis pharetra commodo consectetur arcu ut pretium id in.
+                Dolor.
+              </p>
+
+              <div
+                class="flex items-center gap-2 py-4 bg-white shadow-md rounded-lg"
+              >
+                <span
+                  class="iconify text-xl bg-gray-100 text-yellow-500"
+                  data-icon="mdi:checkbox-marked-outline"
+                ></span>
+                <p class="text-gray-800 text-md font-bold">
+                  Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.
+                </p>
+              </div>
+
+              <p class="text-sm text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Facilisis pharetra commodo consectetur arcu ut pretium id in
+                viverra. Nulla sem eu vehicula senectus eget libero, dignissim.
+                Dolor.
+              </p>
+            </div>
+
+            <!-- Right Side - Image -->
+            <div class="flex justify-center">
+              <img
+                src="./assets/images/tabImage.png"
+                alt="Tab Image"
+                class="w-full max-w-md md:max-w-full shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-content" id="tab2">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Left Side - Text & Features -->
+            <div class="space-y-6">
+              <h1 class="text-2xl font-bold text-gray-900">Features 2</h1>
+              <p class="text-sm text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Facilisis pharetra commodo consectetur arcu ut pretium id in
+                viverra. Nulla se dignissim. Dolor.
+              </p>
+
+              <div
+                class="flex items-center gap-2 py-4 bg-white shadow-md rounded-lg"
+              >
+                <span
+                  class="iconify text-xl bg-gray-100 text-yellow-500"
+                  data-icon="mdi:checkbox-marked-outline"
+                ></span>
+                <p class="text-gray-800 text-md font-bold">
+                  Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.
+                </p>
+              </div>
+
+              <p class="text-sm text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Facilisis pharetra commodo consectetur arcu ut pretium id in.
+                Dolor.
+              </p>
+
+              <div
+                class="flex items-center gap-2 py-4 bg-white shadow-md rounded-lg"
+              >
+                <span
+                  class="iconify text-xl bg-gray-100 text-yellow-500"
+                  data-icon="mdi:checkbox-marked-outline"
+                ></span>
+                <p class="text-gray-800 text-md font-bold">
+                  Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.
+                </p>
+              </div>
+
+              <p class="text-sm text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Facilisis pharetra commodo consectetur arcu ut pretium id in
+                viverra. Nulla sem eu vehicula senectus eget libero, dignissim.
+                Dolor.
+              </p>
+            </div>
+
+            <!-- Right Side - Image -->
+            <div class="flex justify-center">
+              <img
+                src="./assets/images/featuresImage.png"
+                alt="Tab Image"
+                class="w-full max-w-md md:max-w-full shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-content" id="tab3">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Left Side - Text & Features -->
+            <div class="space-y-6">
+              <h1 class="text-2xl font-bold text-gray-900">Features 3</h1>
+              <p class="text-sm text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Facilisis pharetra commodo consectetur arcu ut pretium id in
+                viverra. Nulla se dignissim. Dolor.
+              </p>
+
+              <div
+                class="flex items-center gap-2 py-4 bg-white shadow-md rounded-lg"
+              >
+                <span
+                  class="iconify text-xl bg-gray-100 text-yellow-500"
+                  data-icon="mdi:checkbox-marked-outline"
+                ></span>
+                <p class="text-gray-800 text-md font-bold">
+                  Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.
+                </p>
+              </div>
+
+              <p class="text-sm text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Facilisis pharetra commodo consectetur arcu ut pretium id in.
+                Dolor.
+              </p>
+
+              <div
+                class="flex items-center gap-2 py-4 bg-white shadow-md rounded-lg"
+              >
+                <span
+                  class="iconify text-xl bg-gray-100 text-yellow-500"
+                  data-icon="mdi:checkbox-marked-outline"
+                ></span>
+                <p class="text-gray-800 text-md font-bold">
+                  Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.
+                </p>
+              </div>
+
+              <p class="text-sm text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Facilisis pharetra commodo consectetur arcu ut pretium id in
+                viverra. Nulla sem eu vehicula senectus eget libero, dignissim.
+                Dolor.
+              </p>
+            </div>
+
+            <!-- Right Side - Image -->
+            <div class="flex justify-center">
+              <img
+                src="./assets/images/whoWeAre.png"
+                alt="Tab Image"
+                class="w-full max-w-md md:max-w-full shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- tab section end -->
 
     <!-- mobile section start -->
     <section class="py-12">
-        <div class="container">
-            <h1 class="text-center text-3xl md:text-2xl font-semibold text-gray-900">Cras donec in porta aliquet
-                facilisi. c
-                in porta a</h1>
+      <div class="container">
+        <h1
+          class="text-center text-3xl md:text-2xl font-semibold text-gray-900"
+        >
+          Cras donec in porta aliquet facilisi. c in porta a
+        </h1>
 
-            <div class="flex flex-col md:flex-row justify-between gap-8 my-8 items-center">
-                <!-- Left Side - Image -->
-                <div class=" flex justify-center w-3/5">
-                    <img src="./assets/images/mobileImage.png" alt="Features" class="w-full ">
-                </div>
+        <div
+          class="flex flex-col md:flex-row justify-between gap-8 my-8 items-center"
+        >
+          <!-- Left Side - Image -->
+          <div class="flex justify-center w-3/5">
+            <img
+              src="./assets/images/mobileImage.png"
+              alt="Features"
+              class="w-full"
+            />
+          </div>
 
-                <!-- Right Side - Features List -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-5 text-left p-4">
-                    <!-- Feature 1 -->
-                    <div class="flex items-start gap-4 p-4 rounded-lg bg-white shadow-md">
-                        <img src="./assets/images/mobileIcon-1.png" alt="Icon 1" class="w-10 h-10">
-                        <div>
-                            <h2 class="text-md font-semibold text-gray-900">Lorem ipsum dolor sit amet</h2>
-                            <p class="text-gray-600 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-                        </div>
-                    </div>
-
-                    <!-- Feature 2 -->
-                    <div class="flex items-start gap-4 p-4 rounded-lg bg-white shadow-md">
-                        <img src="./assets/images/mobileIcon-2.png" alt="Icon 2" class="w-10 h-10">
-                        <div>
-                            <h2 class="text-md font-semibold text-gray-900">Lorem ipsum dolor sit amet</h2>
-                            <p class="text-gray-600 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-                        </div>
-                    </div>
-
-                    <!-- Feature 3 -->
-                    <div class="flex items-start gap-4 p-4 rounded-lg bg-white shadow-md">
-                        <img src="./assets/images/mobileIcon-3.png" alt="Icon 3" class="w-10 h-10">
-                        <div>
-                            <h2 class="text-md font-semibold text-gray-900">Lorem ipsum dolor sit amet</h2>
-                            <p class="text-gray-600 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-                        </div>
-                    </div>
-
-                    <!-- Feature 4 -->
-                    <div class="flex items-start gap-4 p-4 rounded-lg bg-white shadow-md">
-                        <img src="./assets/images/mobileIcon-4.png" alt="Icon 4" class="w-10 h-10">
-                        <div>
-                            <h2 class="text-md font-semibold text-gray-900">Lorem ipsum dolor sit amet</h2>
-                            <p class="text-gray-600 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-                        </div>
-                    </div>
-
-                    <!-- Feature 5 -->
-                    <div class="flex items-start gap-4 p-4 rounded-lg bg-white shadow-md">
-                        <img src="./assets/images/mobileIcon-5.png" alt="Icon 5" class="w-10 h-10">
-                        <div>
-                            <h2 class="text-md font-semibold text-gray-900">Lorem ipsum dolor sit amet</h2>
-                            <p class="text-gray-600 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-                        </div>
-                    </div>
-
-                    <!-- Feature 6 -->
-                    <div class="flex items-start gap-4 p-4 rounded-lg bg-white shadow-md">
-                        <img src="./assets/images/mobileIcon-6.png" alt="Icon 6" class="w-10 h-10">
-                        <div>
-                            <h2 class="text-md font-semibold text-gray-900">Lorem ipsum dolor sit amet</h2>
-                            <p class="text-gray-600 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-                        </div>
-                    </div>
-                </div>
+          <!-- Right Side - Features List -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5 text-left p-4">
+            <!-- Feature 1 -->
+            <div
+              class="flex items-start gap-4 p-4 rounded-lg bg-white shadow-md"
+            >
+              <img
+                src="./assets/images/mobileIcon-1.png"
+                alt="Icon 1"
+                class="w-10 h-10"
+              />
+              <div>
+                <h2 class="text-md font-semibold text-gray-900">
+                  Lorem ipsum dolor sit amet
+                </h2>
+                <p class="text-gray-600 text-sm">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing
+                </p>
+              </div>
             </div>
+
+            <!-- Feature 2 -->
+            <div
+              class="flex items-start gap-4 p-4 rounded-lg bg-white shadow-md"
+            >
+              <img
+                src="./assets/images/mobileIcon-2.png"
+                alt="Icon 2"
+                class="w-10 h-10"
+              />
+              <div>
+                <h2 class="text-md font-semibold text-gray-900">
+                  Lorem ipsum dolor sit amet
+                </h2>
+                <p class="text-gray-600 text-sm">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing
+                </p>
+              </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div
+              class="flex items-start gap-4 p-4 rounded-lg bg-white shadow-md"
+            >
+              <img
+                src="./assets/images/mobileIcon-3.png"
+                alt="Icon 3"
+                class="w-10 h-10"
+              />
+              <div>
+                <h2 class="text-md font-semibold text-gray-900">
+                  Lorem ipsum dolor sit amet
+                </h2>
+                <p class="text-gray-600 text-sm">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing
+                </p>
+              </div>
+            </div>
+
+            <!-- Feature 4 -->
+            <div
+              class="flex items-start gap-4 p-4 rounded-lg bg-white shadow-md"
+            >
+              <img
+                src="./assets/images/mobileIcon-4.png"
+                alt="Icon 4"
+                class="w-10 h-10"
+              />
+              <div>
+                <h2 class="text-md font-semibold text-gray-900">
+                  Lorem ipsum dolor sit amet
+                </h2>
+                <p class="text-gray-600 text-sm">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing
+                </p>
+              </div>
+            </div>
+
+            <!-- Feature 5 -->
+            <div
+              class="flex items-start gap-4 p-4 rounded-lg bg-white shadow-md"
+            >
+              <img
+                src="./assets/images/mobileIcon-5.png"
+                alt="Icon 5"
+                class="w-10 h-10"
+              />
+              <div>
+                <h2 class="text-md font-semibold text-gray-900">
+                  Lorem ipsum dolor sit amet
+                </h2>
+                <p class="text-gray-600 text-sm">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing
+                </p>
+              </div>
+            </div>
+
+            <!-- Feature 6 -->
+            <div
+              class="flex items-start gap-4 p-4 rounded-lg bg-white shadow-md"
+            >
+              <img
+                src="./assets/images/mobileIcon-6.png"
+                alt="Icon 6"
+                class="w-10 h-10"
+              />
+              <div>
+                <h2 class="text-md font-semibold text-gray-900">
+                  Lorem ipsum dolor sit amet
+                </h2>
+                <p class="text-gray-600 text-sm">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- mobile section end -->
 
     <!-- service section start -->
     <section class="py-12">
-        <div class="container">
-            <h2 class=" text-center text-yellow-500 uppercase mb-2">Services</h2>
-            <h2 class=" text-center text-3xl">Cras donec in porta aliquet facilisic in porta a</h2>
+      <div class="container">
+        <h2 class="text-center text-yellow-500 uppercase mb-2">Services</h2>
+        <h2 class="text-center text-3xl">
+          Cras donec in porta aliquet facilisic in porta a
+        </h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 place-center text-center ">
-                <div class="card3 bg-white p-16 shadow-md w-68 md:w-96 my-4 text-center border-b-y-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
-                        class="border-0 p-2 bg-yellow-300 text-yellow-500 mt-4" viewBox="0 0 24 24">
-                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="1.5"
-                            d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193q-.51.041-1.02.072v3.091l-3-3q-2.031 0-4.02-.163a2.1 2.1 0 0 1-.825-.242m9.345-8.334a2 2 0 0 0-.476-.095a48.6 48.6 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.5 48.5 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402c-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235q.865.113 1.74.194V21l4.155-4.155" />
-                    </svg>
-                    <strong class="block text-gray-800 text-lg  my-2">Cras donec in onec in </strong>
-                    <small class="text-gray-600 my-2">Lorem ipsum dolor sit amet, consectetur adipiscing asda kuh
-                        lisda
-                    </small>
-                    <div class="flex justify-center items-center gap-5">
-                        <a href=""
-                            class="text-sm text-yellow-500 my-2 no-underline flex items-center gap-1">
-                            Read more
-                            <span class="iconify" data-icon="mdi:arrow-right"></span>
-                        </a>
-                    </div>
-
-                </div>
-                <div class="card3 bg-white p-16 shadow-md w-68 md:w-96 my-4 text-center border-b-o-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
-                        class="border-0 p-2 bg-orange-300 text-orange-500 mt-4" viewBox="0 0 24 24">
-                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="1.5"
-                            d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193q-.51.041-1.02.072v3.091l-3-3q-2.031 0-4.02-.163a2.1 2.1 0 0 1-.825-.242m9.345-8.334a2 2 0 0 0-.476-.095a48.6 48.6 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.5 48.5 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402c-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235q.865.113 1.74.194V21l4.155-4.155" />
-                    </svg>
-                    <strong class="block text-gray-800 text-lg  my-2">Cras donec in onec in </strong>
-                    <small class="text-gray-600 my-2">Lorem ipsum dolor sit amet, consectetur adipiscing asda kuh
-                        lisda
-                    </small>
-                    <div class="flex justify-center items-center gap-5">
-                        <a href=""
-                            class="text-sm text-yellow-500 my-2 no-underline flex items-center gap-1">
-                            Read more
-                            <span class="iconify" data-icon="mdi:arrow-right"></span>
-                        </a>
-                    </div>
-
-                </div>
-                <div class="card3 bg-white p-16 shadow-md w-68 md:w-96 my-4 text-center border-b-g-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
-                        class="border-0 p-2 bg-green-300 text-green-500 mt-4" viewBox="0 0 24 24">
-                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="1.5"
-                            d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193q-.51.041-1.02.072v3.091l-3-3q-2.031 0-4.02-.163a2.1 2.1 0 0 1-.825-.242m9.345-8.334a2 2 0 0 0-.476-.095a48.6 48.6 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.5 48.5 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402c-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235q.865.113 1.74.194V21l4.155-4.155" />
-                    </svg>
-                    <strong class="block text-gray-800 text-lg  my-2">Cras donec in onec in </strong>
-                    <small class="text-gray-600 my-2">Lorem ipsum dolor sit amet, consectetur adipiscing asda kuh
-                        lisda
-                    </small>
-                    <div class="flex justify-center items-center gap-5">
-                        <a href=""
-                            class="text-sm text-yellow-500 my-2 no-underline flex items-center gap-1">
-                            Read more
-                            <span class="iconify" data-icon="mdi:arrow-right"></span>
-                        </a>
-                    </div>
-
-                </div>
-                <div class="card3 bg-white p-16 shadow-md w-68 md:w-96 my-4 text-center border-b-p-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
-                        class="border-0 p-2 bg-pink-300 text-pink-500 mt-4" viewBox="0 0 24 24">
-                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="1.5"
-                            d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193q-.51.041-1.02.072v3.091l-3-3q-2.031 0-4.02-.163a2.1 2.1 0 0 1-.825-.242m9.345-8.334a2 2 0 0 0-.476-.095a48.6 48.6 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.5 48.5 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402c-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235q.865.113 1.74.194V21l4.155-4.155" />
-                    </svg>
-                    <strong class="block text-gray-800 text-lg  my-2">Cras donec in onec in </strong>
-                    <small class="text-gray-600 my-2">Lorem ipsum dolor sit amet, consectetur adipiscing asda kuh
-                        lisda
-                    </small>
-                    <div class="flex justify-center items-center gap-5">
-                        <a href=""
-                            class="text-sm text-yellow-500 my-2 no-underline flex items-center gap-1">
-                            Read more
-                            <span class="iconify" data-icon="mdi:arrow-right"></span>
-                        </a>
-                    </div>
-
-                </div>
-                <div class="card3 bg-white p-16 shadow-md w-68 md:w-96 my-4 text-center border-b-v-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
-                        class="border-0 p-2 bg-violet-300 text-violet-500 mt-4" viewBox="0 0 24 24">
-                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="1.5"
-                            d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193q-.51.041-1.02.072v3.091l-3-3q-2.031 0-4.02-.163a2.1 2.1 0 0 1-.825-.242m9.345-8.334a2 2 0 0 0-.476-.095a48.6 48.6 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.5 48.5 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402c-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235q.865.113 1.74.194V21l4.155-4.155" />
-                    </svg>
-                    <strong class="block text-gray-800 text-lg  my-2">Cras donec in onec in </strong>
-                    <small class="text-gray-600 my-2">Lorem ipsum dolor sit amet, consectetur adipiscing asda kuh
-                        lisda
-                    </small>
-                    <div class="flex justify-center items-center gap-5">
-                        <a href=""
-                            class="text-sm text-yellow-500 my-2 no-underline flex items-center gap-1">
-                            Read more
-                            <span class="iconify" data-icon="mdi:arrow-right"></span>
-                        </a>
-                    </div>
-
-                </div>
-                <div class="card3 bg-white p-16 shadow-md w-68 md:w-96 my-4 text-center border-b-p7-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
-                        class="border-0 p-2 bg-pink-400 text-pink-700 mt-4" viewBox="0 0 24 24">
-                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="1.5"
-                            d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193q-.51.041-1.02.072v3.091l-3-3q-2.031 0-4.02-.163a2.1 2.1 0 0 1-.825-.242m9.345-8.334a2 2 0 0 0-.476-.095a48.6 48.6 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.5 48.5 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402c-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235q.865.113 1.74.194V21l4.155-4.155" />
-                    </svg>
-                    <strong class="block text-gray-800 text-lg  my-2">Cras donec in onec in </strong>
-                    <small class="text-gray-600 my-2">Lorem ipsum dolor sit amet, consectetur adipiscing asda kuh
-                        lisda
-                    </small>
-                    <div class="flex justify-center items-center gap-5">
-                        <a href=""
-                            class="text-sm text-yellow-500 my-2 no-underline flex items-center gap-1">
-                            Read more
-                            <span class="iconify" data-icon="mdi:arrow-right"></span>
-                        </a>
-                    </div>
-
-                </div>
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-5 place-center text-center"
+        >
+          <div
+            class="card3 bg-white p-16 shadow-md w-68 md:w-96 my-4 text-center border-b-y-2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              class="border-0 p-2 bg-yellow-300 text-yellow-500 mt-4"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193q-.51.041-1.02.072v3.091l-3-3q-2.031 0-4.02-.163a2.1 2.1 0 0 1-.825-.242m9.345-8.334a2 2 0 0 0-.476-.095a48.6 48.6 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.5 48.5 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402c-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235q.865.113 1.74.194V21l4.155-4.155"
+              />
+            </svg>
+            <strong class="block text-gray-800 text-lg my-2"
+              >Cras donec in onec in
+            </strong>
+            <small class="text-gray-600 my-2"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing asda kuh lisda
+            </small>
+            <div class="flex justify-center items-center gap-5">
+              <a
+                href=""
+                class="text-sm text-yellow-500 my-2 no-underline flex items-center gap-1"
+              >
+                Read more
+                <span class="iconify" data-icon="mdi:arrow-right"></span>
+              </a>
             </div>
+          </div>
+          <div
+            class="card3 bg-white p-16 shadow-md w-68 md:w-96 my-4 text-center border-b-o-2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              class="border-0 p-2 bg-orange-300 text-orange-500 mt-4"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193q-.51.041-1.02.072v3.091l-3-3q-2.031 0-4.02-.163a2.1 2.1 0 0 1-.825-.242m9.345-8.334a2 2 0 0 0-.476-.095a48.6 48.6 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.5 48.5 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402c-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235q.865.113 1.74.194V21l4.155-4.155"
+              />
+            </svg>
+            <strong class="block text-gray-800 text-lg my-2"
+              >Cras donec in onec in
+            </strong>
+            <small class="text-gray-600 my-2"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing asda kuh lisda
+            </small>
+            <div class="flex justify-center items-center gap-5">
+              <a
+                href=""
+                class="text-sm text-yellow-500 my-2 no-underline flex items-center gap-1"
+              >
+                Read more
+                <span class="iconify" data-icon="mdi:arrow-right"></span>
+              </a>
+            </div>
+          </div>
+          <div
+            class="card3 bg-white p-16 shadow-md w-68 md:w-96 my-4 text-center border-b-g-2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              class="border-0 p-2 bg-green-300 text-green-500 mt-4"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193q-.51.041-1.02.072v3.091l-3-3q-2.031 0-4.02-.163a2.1 2.1 0 0 1-.825-.242m9.345-8.334a2 2 0 0 0-.476-.095a48.6 48.6 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.5 48.5 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402c-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235q.865.113 1.74.194V21l4.155-4.155"
+              />
+            </svg>
+            <strong class="block text-gray-800 text-lg my-2"
+              >Cras donec in onec in
+            </strong>
+            <small class="text-gray-600 my-2"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing asda kuh lisda
+            </small>
+            <div class="flex justify-center items-center gap-5">
+              <a
+                href=""
+                class="text-sm text-yellow-500 my-2 no-underline flex items-center gap-1"
+              >
+                Read more
+                <span class="iconify" data-icon="mdi:arrow-right"></span>
+              </a>
+            </div>
+          </div>
+          <div
+            class="card3 bg-white p-16 shadow-md w-68 md:w-96 my-4 text-center border-b-p-2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              class="border-0 p-2 bg-pink-300 text-pink-500 mt-4"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193q-.51.041-1.02.072v3.091l-3-3q-2.031 0-4.02-.163a2.1 2.1 0 0 1-.825-.242m9.345-8.334a2 2 0 0 0-.476-.095a48.6 48.6 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.5 48.5 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402c-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235q.865.113 1.74.194V21l4.155-4.155"
+              />
+            </svg>
+            <strong class="block text-gray-800 text-lg my-2"
+              >Cras donec in onec in
+            </strong>
+            <small class="text-gray-600 my-2"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing asda kuh lisda
+            </small>
+            <div class="flex justify-center items-center gap-5">
+              <a
+                href=""
+                class="text-sm text-yellow-500 my-2 no-underline flex items-center gap-1"
+              >
+                Read more
+                <span class="iconify" data-icon="mdi:arrow-right"></span>
+              </a>
+            </div>
+          </div>
+          <div
+            class="card3 bg-white p-16 shadow-md w-68 md:w-96 my-4 text-center border-b-v-2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              class="border-0 p-2 bg-violet-300 text-violet-500 mt-4"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193q-.51.041-1.02.072v3.091l-3-3q-2.031 0-4.02-.163a2.1 2.1 0 0 1-.825-.242m9.345-8.334a2 2 0 0 0-.476-.095a48.6 48.6 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.5 48.5 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402c-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235q.865.113 1.74.194V21l4.155-4.155"
+              />
+            </svg>
+            <strong class="block text-gray-800 text-lg my-2"
+              >Cras donec in onec in
+            </strong>
+            <small class="text-gray-600 my-2"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing asda kuh lisda
+            </small>
+            <div class="flex justify-center items-center gap-5">
+              <a
+                href=""
+                class="text-sm text-yellow-500 my-2 no-underline flex items-center gap-1"
+              >
+                Read more
+                <span class="iconify" data-icon="mdi:arrow-right"></span>
+              </a>
+            </div>
+          </div>
+          <div
+            class="card3 bg-white p-16 shadow-md w-68 md:w-96 my-4 text-center border-b-p7-2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              class="border-0 p-2 bg-pink-400 text-pink-700 mt-4"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193q-.51.041-1.02.072v3.091l-3-3q-2.031 0-4.02-.163a2.1 2.1 0 0 1-.825-.242m9.345-8.334a2 2 0 0 0-.476-.095a48.6 48.6 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.5 48.5 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402c-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235q.865.113 1.74.194V21l4.155-4.155"
+              />
+            </svg>
+            <strong class="block text-gray-800 text-lg my-2"
+              >Cras donec in onec in
+            </strong>
+            <small class="text-gray-600 my-2"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing asda kuh lisda
+            </small>
+            <div class="flex justify-center items-center gap-5">
+              <a
+                href=""
+                class="text-sm text-yellow-500 my-2 no-underline flex items-center gap-1"
+              >
+                Read more
+                <span class="iconify" data-icon="mdi:arrow-right"></span>
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- service section end -->
 
     <!-- Pricing section start -->
     <section>
-        <div class="container">
-            <h2 class=" text-center text-yellow-500 uppercase mb-2">Services</h2>
-            <h2 class=" text-center text-3xl">Check Our Pricing</h2>
-            <div class="grid grid-cols-1 md:grid-cols-4 place-center text-center gap-5">
-                <div class="card3 w-68">
-                    <h2 class=" text-center text-yellow-500 uppercase mb-2">Basic Plan</h2>
-                    <p class="text-sm">Best for Small Business</p>
-                    <h2 class="text-center text-3xl flex items-center justify-center relative">
-                        <span class="absolute text-sm -top-1 left-12">BDT</span>
-                        <span class="text-4xl font-bold">9999</span>
-                        <span class="absolute text-sm -bottom-1 right-12 font-small text-gray-400">/mo</span>
-                    </h2>
+      <div class="container">
+        <h2 class="text-center text-yellow-500 uppercase mb-2">Services</h2>
+        <h2 class="text-center text-3xl">Check Our Pricing</h2>
+        <div
+          class="grid grid-cols-1 md:grid-cols-4 place-center text-center gap-5"
+        >
+          <div class="card3 w-68">
+            <h2 class="text-center text-yellow-500 uppercase mb-2">
+              Basic Plan
+            </h2>
+            <p class="text-sm">Best for Small Business</p>
+            <h2
+              class="text-center text-3xl flex items-center justify-center relative"
+            >
+              <span class="absolute text-sm -top-1 left-12">BDT</span>
+              <span class="text-4xl font-bold">9999</span>
+              <span
+                class="absolute text-sm -bottom-1 right-12 font-small text-gray-400"
+                >/mo</span
+              >
+            </h2>
 
-                    <img src="./assets/images/pricingImage-1.png" alt="" class="p-2 h-40">
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                </div>
-                <div class="card3 w-68">
-                    <h2 class=" text-center text-green-500 uppercase mb-2">Starter Plan</h2>
-                    <p class="text-sm">Best for Small Business</p>
-                    <h2 class="text-center text-3xl flex items-center justify-center relative">
-                        <span class="absolute text-sm -top-1 left-12">BDT</span>
-                        <span class="text-4xl font-bold">9999</span>
-                        <span class="absolute text-sm -bottom-1 right-12 font-small text-gray-400">/mo</span>
-                    </h2>
-                    <img src="./assets/images/pricingImage-2.png" alt="" class="p-2 h-40">
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                </div>
-                <div class="card3 w-68">
-                    <h2 class=" text-center text-violet-500 uppercase mb-2">Business Plan</h2>
-                    <p class="text-sm">Best for Multiple Business</p>
-                    <h2 class="text-center text-3xl flex items-center justify-center relative">
-                        <span class="absolute text-sm -top-1 left-12">BDT</span>
-                        <span class="text-4xl font-bold">9999</span>
-                        <span class="absolute text-sm -bottom-1 right-12 font-small text-gray-400">/mo</span>
-                    </h2>
-                    <img src="./assets/images/pricingImage-3.png" alt="" class="p-2 h-40">
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                </div>
-                <div class="card3 w-68">
-                    <h2 class=" text-center text-red-500 uppercase mb-2">Enterprise</h2>
-                    <p class="text-sm">Best for Large Scale Business</p>
-                    <h2 class="text-center text-3xl flex items-center justify-center relative">
-                        <span class="absolute text-sm -top-1 left-12">BDT</span>
-                        <span class="text-4xl font-bold">9999</span>
-                        <span class="absolute text-sm -bottom-1 right-12 font-small text-gray-400">/mo</span>
-                    </h2>
-                    <img src="./assets/images/pricingImage-4.png" alt="" class="p-2 h-40">
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="text-yellow-500"
-                            viewBox="0 0 16 16">
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-sm">Best for Small Business</p>
-                    </div>
-                </div>
-
+            <img
+              src="./assets/images/pricingImage-1.png"
+              alt=""
+              class="p-2 h-40"
+            />
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
             </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+          </div>
+          <div class="card3 w-68">
+            <h2 class="text-center text-green-500 uppercase mb-2">
+              Starter Plan
+            </h2>
+            <p class="text-sm">Best for Small Business</p>
+            <h2
+              class="text-center text-3xl flex items-center justify-center relative"
+            >
+              <span class="absolute text-sm -top-1 left-12">BDT</span>
+              <span class="text-4xl font-bold">9999</span>
+              <span
+                class="absolute text-sm -bottom-1 right-12 font-small text-gray-400"
+                >/mo</span
+              >
+            </h2>
+            <img
+              src="./assets/images/pricingImage-2.png"
+              alt=""
+              class="p-2 h-40"
+            />
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+          </div>
+          <div class="card3 w-68">
+            <h2 class="text-center text-violet-500 uppercase mb-2">
+              Business Plan
+            </h2>
+            <p class="text-sm">Best for Multiple Business</p>
+            <h2
+              class="text-center text-3xl flex items-center justify-center relative"
+            >
+              <span class="absolute text-sm -top-1 left-12">BDT</span>
+              <span class="text-4xl font-bold">9999</span>
+              <span
+                class="absolute text-sm -bottom-1 right-12 font-small text-gray-400"
+                >/mo</span
+              >
+            </h2>
+            <img
+              src="./assets/images/pricingImage-3.png"
+              alt=""
+              class="p-2 h-40"
+            />
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+          </div>
+          <div class="card3 w-68">
+            <h2 class="text-center text-red-500 uppercase mb-2">Enterprise</h2>
+            <p class="text-sm">Best for Large Scale Business</p>
+            <h2
+              class="text-center text-3xl flex items-center justify-center relative"
+            >
+              <span class="absolute text-sm -top-1 left-12">BDT</span>
+              <span class="text-4xl font-bold">9999</span>
+              <span
+                class="absolute text-sm -bottom-1 right-12 font-small text-gray-400"
+                >/mo</span
+              >
+            </h2>
+            <img
+              src="./assets/images/pricingImage-4.png"
+              alt=""
+              class="p-2 h-40"
+            />
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                class="text-yellow-500"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353l4.493-6.74a.75.75 0 0 1 1.04-.207"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-sm">Best for Small Business</p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- Pricing section end -->
 
     <!-- Frequently Asked Questions section star -->
     <section class="py-12">
-        <div class="container">
-            <div class="text-center pt-4">
-                <h2 class="text-yellow-500 font-semibold uppercase mb-2 ">F.A.Q</h2>
-                <h3 class="text-3xl font-bold text-gray-800">Frequently Asked Questions</h3>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-5 py-12">
-                <!-- FAQ Item 1 -->
-                <div class="faq-item border-b-2  bg-white overflow-hidden">
-                    <div
-                        class="faq-question px-6 py-4 w-full flex justify-between items-center cursor-pointer transition">
-                        <span class="font-bold text-gray-600">Lorem ipsum dolor sit amet Lorem ipsum dolor sit
-                            amet.</span>
-                        <span class="faq-icon text-yellow-500 text-3xl flex justify-center items-center mx-4">+</span>
-                    </div>
-                    <div class="faq-answer px-6 py-4 text-gray-600 hidden">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio suscipit veniam odit magni
-                        doloremque sint, placeat beatae nostrum aperiam maxime minus voluptatum illo nulla accusamus
-                        fugiat facilis doloribus ea ut.
-                    </div>
-                </div>
-
-                <!-- FAQ Item 2 -->
-                <div class="faq-item border-b-2  bg-white overflow-hidden">
-                    <div
-                        class="faq-question px-6 py-4 w-full flex justify-between items-center cursor-pointer transition">
-                        <span class="font-bold text-gray-600">Lorem ipsum dolor sit amet Lorem ipsum</span>
-                        <span class="faq-icon text-yellow-500 text-3xl flex justify-center items-center mx-4">+</span>
-                    </div>
-                    <div class="faq-answer px-6 py-4 text-gray-600 hidden">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molestias itaque,
-                        provident reiciendis dignissimos blanditiis hic nam eos velit, atque, nemo expedita iure!
-                        Harum vel molestiae commodi quo ducimus dolor.
-                    </div>
-                </div>
-
-                <!-- FAQ Item 3 -->
-                <div class="faq-item border-b-2 bg-white overflow-hidden">
-                    <div
-                        class="faq-question px-6 py-4 w-full flex justify-between items-center cursor-pointer transition">
-                        <span class="font-bold text-gray-600">Lorem ipsum dolor sit amet Lorem ipsum dit
-                            amet.</span>
-                        <span class="faq-icon text-yellow-500 text-3xl flex justify-center items-center mx-4">+</span>
-                    </div>
-                    <div class="faq-answer px-6 py-4 text-gray-600 hidden">
-                        You can track your order using the tracking number provided in the confirmation email. Lorem
-                        ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, itaque. Eius ratione omnis
-                        molestias laudantium blanditiis eum harum repellendus nesciunt tenetur? Perferendis officiis
-                        enim et blanditiis dignissimos harum commodi autem.
-                    </div>
-                </div>
-
-                <!-- FAQ Item 4 -->
-                <div class="faq-item border-b-2 bg-white overflow-hidden">
-                    <div
-                        class="faq-question px-6 py-4 w-full flex justify-between items-center cursor-pointer transition">
-                        <span class="font-bold text-gray-600">Lorem ipsum dolor sit amet Lorem ipsum dolor </span>
-                        <span class="faq-icon text-yellow-500 text-3xl  flex justify-center items-center mx-4">+</span>
-                    </div>
-                    <div class="faq-answer px-6 py-4 text-gray-600 hidden">
-                        We accept credit cards, PayPal, and Apple Pay. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Unde blanditiis ipsam dolorem in aliquam labore alias quas qui architecto,
-                        incidunt reiciendis voluptatibus eos, hic iure aliquid totam. Culpa, obcaecati expedita.
-                    </div>
-                </div>
-                <!-- FAQ Item 5 -->
-                <div class="faq-item border-b-2 bg-white overflow-hidden">
-                    <div
-                        class="faq-question px-6 py-4 w-full flex justify-between items-center cursor-pointer transition">
-                        <span class="font-bold text-gray-600">Lorem ipsum dolor sit amet Loamet. </span>
-                        <span class="faq-icon text-yellow-500 text-3xl  flex justify-center items-center mx-4">+</span>
-                    </div>
-                    <div class="faq-answer px-6 py-4 text-gray-600 hidden">
-                        We accept credit cards, PayPal, and Apple Pay. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Unde blanditiis ipsam dolorem in aliquam labore alias quas qui architecto,
-                        incidunt reiciendis voluptatibus eos, hic iure aliquid totam. Culpa, obcaecati expedita.
-                    </div>
-                </div>
-                <!-- FAQ Item 6 -->
-                <div class="faq-item border-b-2 bg-white overflow-hidden">
-                    <div
-                        class="faq-question px-6 py-4 w-full flex justify-between items-center cursor-pointer transition">
-                        <span class="font-bold text-gray-600">Lorem ipsum dolor sit amet Lorem ipsum </span>
-                        <span class="faq-icon text-yellow-500 text-3xl  flex justify-center items-center mx-4">+</span>
-                    </div>
-                    <div class="faq-answer px-6 py-4 text-gray-600 hidden">
-                        We accept credit cards, PayPal, and Apple Pay. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Unde blanditiis ipsam dolorem in aliquam labore alias quas qui architecto,
-                        incidunt reiciendis voluptatibus eos, hic iure aliquid totam. Culpa, obcaecati expedita.
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="text-center pt-4">
+          <h2 class="text-yellow-500 font-semibold uppercase mb-2">F.A.Q</h2>
+          <h3 class="text-3xl font-bold text-gray-800">
+            Frequently Asked Questions
+          </h3>
         </div>
+
+        <div class="grid md:grid-cols-2 gap-5 py-12">
+          <!-- FAQ Item 1 -->
+          <div class="faq-item border-b-2 bg-white overflow-hidden">
+            <div
+              class="faq-question px-6 py-4 w-full flex justify-between items-center cursor-pointer transition"
+            >
+              <span class="font-bold text-gray-600"
+                >Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</span
+              >
+              <span
+                class="faq-icon text-yellow-500 text-3xl flex justify-center items-center mx-4"
+                >+</span
+              >
+            </div>
+            <div class="faq-answer px-6 py-4 text-gray-600 hidden">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+              suscipit veniam odit magni doloremque sint, placeat beatae nostrum
+              aperiam maxime minus voluptatum illo nulla accusamus fugiat
+              facilis doloribus ea ut.
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="faq-item border-b-2 bg-white overflow-hidden">
+            <div
+              class="faq-question px-6 py-4 w-full flex justify-between items-center cursor-pointer transition"
+            >
+              <span class="font-bold text-gray-600"
+                >Lorem ipsum dolor sit amet Lorem ipsum</span
+              >
+              <span
+                class="faq-icon text-yellow-500 text-3xl flex justify-center items-center mx-4"
+                >+</span
+              >
+            </div>
+            <div class="faq-answer px-6 py-4 text-gray-600 hidden">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+              molestias itaque, provident reiciendis dignissimos blanditiis hic
+              nam eos velit, atque, nemo expedita iure! Harum vel molestiae
+              commodi quo ducimus dolor.
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="faq-item border-b-2 bg-white overflow-hidden">
+            <div
+              class="faq-question px-6 py-4 w-full flex justify-between items-center cursor-pointer transition"
+            >
+              <span class="font-bold text-gray-600"
+                >Lorem ipsum dolor sit amet Lorem ipsum dit amet.</span
+              >
+              <span
+                class="faq-icon text-yellow-500 text-3xl flex justify-center items-center mx-4"
+                >+</span
+              >
+            </div>
+            <div class="faq-answer px-6 py-4 text-gray-600 hidden">
+              You can track your order using the tracking number provided in the
+              confirmation email. Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Asperiores, itaque. Eius ratione omnis molestias
+              laudantium blanditiis eum harum repellendus nesciunt tenetur?
+              Perferendis officiis enim et blanditiis dignissimos harum commodi
+              autem.
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="faq-item border-b-2 bg-white overflow-hidden">
+            <div
+              class="faq-question px-6 py-4 w-full flex justify-between items-center cursor-pointer transition"
+            >
+              <span class="font-bold text-gray-600"
+                >Lorem ipsum dolor sit amet Lorem ipsum dolor
+              </span>
+              <span
+                class="faq-icon text-yellow-500 text-3xl flex justify-center items-center mx-4"
+                >+</span
+              >
+            </div>
+            <div class="faq-answer px-6 py-4 text-gray-600 hidden">
+              We accept credit cards, PayPal, and Apple Pay. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Unde blanditiis ipsam
+              dolorem in aliquam labore alias quas qui architecto, incidunt
+              reiciendis voluptatibus eos, hic iure aliquid totam. Culpa,
+              obcaecati expedita.
+            </div>
+          </div>
+          <!-- FAQ Item 5 -->
+          <div class="faq-item border-b-2 bg-white overflow-hidden">
+            <div
+              class="faq-question px-6 py-4 w-full flex justify-between items-center cursor-pointer transition"
+            >
+              <span class="font-bold text-gray-600"
+                >Lorem ipsum dolor sit amet Loamet.
+              </span>
+              <span
+                class="faq-icon text-yellow-500 text-3xl flex justify-center items-center mx-4"
+                >+</span
+              >
+            </div>
+            <div class="faq-answer px-6 py-4 text-gray-600 hidden">
+              We accept credit cards, PayPal, and Apple Pay. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Unde blanditiis ipsam
+              dolorem in aliquam labore alias quas qui architecto, incidunt
+              reiciendis voluptatibus eos, hic iure aliquid totam. Culpa,
+              obcaecati expedita.
+            </div>
+          </div>
+          <!-- FAQ Item 6 -->
+          <div class="faq-item border-b-2 bg-white overflow-hidden">
+            <div
+              class="faq-question px-6 py-4 w-full flex justify-between items-center cursor-pointer transition"
+            >
+              <span class="font-bold text-gray-600"
+                >Lorem ipsum dolor sit amet Lorem ipsum
+              </span>
+              <span
+                class="faq-icon text-yellow-500 text-3xl flex justify-center items-center mx-4"
+                >+</span
+              >
+            </div>
+            <div class="faq-answer px-6 py-4 text-gray-600 hidden">
+              We accept credit cards, PayPal, and Apple Pay. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Unde blanditiis ipsam
+              dolorem in aliquam labore alias quas qui architecto, incidunt
+              reiciendis voluptatibus eos, hic iure aliquid totam. Culpa,
+              obcaecati expedita.
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Frequently Asked Questions section end -->
 
-
-
     <!-- TESTIMONIALS section start -->
     <section class="py-12">
-        <div class="container">
-            <div class="text-center pt-4">
-                <h2 class="text-yellow-500 font-semibold uppercase mb-2">TESTIMONIALS</h2>
-                <h3 class="text-3xl font-bold text-gray-800">What they are saying about us</h3>
-            </div>
-
-            <!-- Carousel -->
-            <div class="relative">
-                <!-- Carousel items -->
-                <div id="carousel" class="grid grid-cols-1 md:grid-cols-3 overflow-hidden gap-5 py-12">
-                    <!-- Testimonial 1 -->
-                    <div class="card3 cardForTestimonial  bg-white rounded-lg shadow-lg w-80">
-                        <div class="flex justify-center gap-2 items-center mb-4">
-                            <img src="./assets/images/star.png" alt="" class="h-5 w-5">
-                            <img src="./assets/images/star.png" alt="" class="h-5 w-5">
-                            <img src="./assets/images/star.png" alt="" class="h-5 w-5">
-                            <img src="./assets/images/star.png" alt="" class="h-5 w-5">
-                            <img src="./assets/images/star.png" alt="" class="h-5 w-5">
-                        </div>
-                        <p class="text-sm py-6 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <div class="flex flex-col justify-center items-center mt-4">
-                            <img src="./assets/images/profileImage-1.png" alt="Profile Image"
-                                class="h-16 w-16 rounded-full mb-2">
-                            <strong class="text-lg">Mary Jane</strong>
-                            <small class="text-gray-500">Entrepreneur</small>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial 2 -->
-                    <div class="card3 cardForTestimonial p-6 bg-white rounded-lg shadow-lg w-80">
-                        <div class="flex justify-center gap-2 items-center mb-4">
-                            <img src="./assets/images/star.png" alt="" class="h-5 w-5">
-                            <img src="./assets/images/star.png" alt="" class="h-5 w-5">
-                            <img src="./assets/images/star.png" alt="" class="h-5 w-5">
-                            <img src="./assets/images/star.png" alt="" class="h-5 w-5">
-                            <img src="./assets/images/star.png" alt="" class="h-5 w-5">
-                        </div>
-                        <p class="text-sm py-6 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <div class="flex flex-col justify-center items-center mt-4">
-                            <img src="./assets/images/profileImage-2.png" alt="Profile Image"
-                                class="h-16 w-16 rounded-full mb-2">
-                            <strong class="text-lg">John Doe</strong>
-                            <small class="text-gray-500">Entrepreneur</small>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial 3 -->
-                    <div class="card3 cardForTestimonial p-6 bg-white rounded-lg shadow-lg w-80 ">
-                        <div class="flex justify-center gap-2 items-center mb-4">
-                            <img src="./assets/images/star.png" alt="" class="h-5 w-5">
-                            <img src="./assets/images/star.png" alt="" class="h-5 w-5">
-                            <img src="./assets/images/star.png" alt="" class="h-5 w-5">
-                            <img src="./assets/images/star.png" alt="" class="h-5 w-5">
-                            <img src="./assets/images/star.png" alt="" class="h-5 w-5">
-                        </div>
-                        <p class="text-sm py-6 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <div class="flex flex-col justify-center items-center mt-4">
-                            <img src="./assets/images/profileImage-3.png" alt="Profile Image"
-                                class="h-16 w-16 rounded-full mb-2">
-                            <strong class="text-lg">Alice Smith</strong>
-                            <small class="text-gray-500">Entrepreneur</small>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Carousel navigation buttons -->
-                <div class="flex justify-center items-center gap-2 pt-12">
-                    <button onclick="highlightCard(0)" class="btn2 w-5 h-5 rounded-full"></button>
-                    <button onclick="highlightCard(1)" class="btn2 w-5 h-5 rounded-full"></button>
-                    <button onclick="highlightCard(2)" class="btn2 w-5 h-5 rounded-full"></button>
-                </div>
-            </div>
+      <div class="container">
+        <div class="text-center pt-4">
+          <h2 class="text-yellow-500 font-semibold uppercase mb-2">
+            TESTIMONIALS
+          </h2>
+          <h3 class="text-3xl font-bold text-gray-800">
+            What they are saying about us
+          </h3>
         </div>
+
+        <!-- Carousel -->
+        <div class="relative">
+          <!-- Carousel items -->
+          <div
+            id="carousel"
+            class="grid grid-cols-1 md:grid-cols-3 overflow-hidden gap-5 py-12"
+          >
+            <!-- Testimonial 1 -->
+            <div
+              class="card3 cardForTestimonial bg-white rounded-lg shadow-lg w-80"
+            >
+              <div class="flex justify-center gap-2 items-center mb-4">
+                <img src="./assets/images/star.png" alt="" class="h-5 w-5" />
+                <img src="./assets/images/star.png" alt="" class="h-5 w-5" />
+                <img src="./assets/images/star.png" alt="" class="h-5 w-5" />
+                <img src="./assets/images/star.png" alt="" class="h-5 w-5" />
+                <img src="./assets/images/star.png" alt="" class="h-5 w-5" />
+              </div>
+              <p class="text-sm py-6 text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <div class="flex flex-col justify-center items-center mt-4">
+                <img
+                  src="./assets/images/profileImage-1.png"
+                  alt="Profile Image"
+                  class="h-16 w-16 rounded-full mb-2"
+                />
+                <strong class="text-lg">Mary Jane</strong>
+                <small class="text-gray-500">Entrepreneur</small>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div
+              class="card3 cardForTestimonial p-6 bg-white rounded-lg shadow-lg w-80"
+            >
+              <div class="flex justify-center gap-2 items-center mb-4">
+                <img src="./assets/images/star.png" alt="" class="h-5 w-5" />
+                <img src="./assets/images/star.png" alt="" class="h-5 w-5" />
+                <img src="./assets/images/star.png" alt="" class="h-5 w-5" />
+                <img src="./assets/images/star.png" alt="" class="h-5 w-5" />
+                <img src="./assets/images/star.png" alt="" class="h-5 w-5" />
+              </div>
+              <p class="text-sm py-6 text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <div class="flex flex-col justify-center items-center mt-4">
+                <img
+                  src="./assets/images/profileImage-2.png"
+                  alt="Profile Image"
+                  class="h-16 w-16 rounded-full mb-2"
+                />
+                <strong class="text-lg">John Doe</strong>
+                <small class="text-gray-500">Entrepreneur</small>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div
+              class="card3 cardForTestimonial p-6 bg-white rounded-lg shadow-lg w-80"
+            >
+              <div class="flex justify-center gap-2 items-center mb-4">
+                <img src="./assets/images/star.png" alt="" class="h-5 w-5" />
+                <img src="./assets/images/star.png" alt="" class="h-5 w-5" />
+                <img src="./assets/images/star.png" alt="" class="h-5 w-5" />
+                <img src="./assets/images/star.png" alt="" class="h-5 w-5" />
+                <img src="./assets/images/star.png" alt="" class="h-5 w-5" />
+              </div>
+              <p class="text-sm py-6 text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <div class="flex flex-col justify-center items-center mt-4">
+                <img
+                  src="./assets/images/profileImage-3.png"
+                  alt="Profile Image"
+                  class="h-16 w-16 rounded-full mb-2"
+                />
+                <strong class="text-lg">Alice Smith</strong>
+                <small class="text-gray-500">Entrepreneur</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel navigation buttons -->
+          <div class="flex justify-center items-center gap-2 pt-12">
+            <button
+              onclick="highlightCard(0)"
+              class="btn2 w-5 h-5 rounded-full"
+            ></button>
+            <button
+              onclick="highlightCard(1)"
+              class="btn2 w-5 h-5 rounded-full"
+            ></button>
+            <button
+              onclick="highlightCard(2)"
+              class="btn2 w-5 h-5 rounded-full"
+            ></button>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- TESTIMONIALS section end -->
 
-
     <!-- client section start -->
     <section class="py-12">
-        <div class="container">
-            <div class="text-center pt-4">
-                <h2 class="text-yellow-500 font-semibold uppercase mb-2 ">OUR CLIENTS</h2>
-                <h3 class="text-3xl font-bold text-gray-800">Temporibus omnis officia</h3>
-            </div>
-
-            <div class="client-slider py-12">
-                <div class="client-track">
-                    <img src="./assets/images/clientImage-1.png" alt="" class="h-10 w-10">
-                    <img src="./assets/images/clientImage-2.png" alt="" class="h-10 w-10">
-                    <img src="./assets/images/clientImage-3.png" alt="" class="h-10 w-10">
-                    <img src="./assets/images/clientImage-4.png" alt="" class="h-10 w-10">
-                    <img src="./assets/images/clientImage-5.png" alt="" class="h-10 w-10">
-                    <img src="./assets/images/clientImage-1.png" alt="" class="h-10 w-10">
-
-
-                    <img src="./assets/images/clientImage-1.png" alt="" class="h-10 w-10">
-                    <img src="./assets/images/clientImage-2.png" alt="" class="h-10 w-10">
-                    <img src="./assets/images/clientImage-3.png" alt="" class="h-10 w-10">
-                    <img src="./assets/images/clientImage-4.png" alt="" class="h-10 w-10">
-                    <img src="./assets/images/clientImage-5.png" alt="" class="h-10 w-10">
-                    <img src="./assets/images/clientImage-1.png" alt="" class="h-10 w-10">
-
-
-                    <img src="./assets/images/clientImage-1.png" alt="" class="h-10 w-10">
-                    <img src="./assets/images/clientImage-2.png" alt="" class="h-10 w-10">
-                    <img src="./assets/images/clientImage-3.png" alt="" class="h-10 w-10">
-                    <img src="./assets/images/clientImage-4.png" alt="" class="h-10 w-10">
-                    <img src="./assets/images/clientImage-5.png" alt="" class="h-10 w-10">
-                    <img src="./assets/images/clientImage-1.png" alt="" class="h-10 w-10">
-
-
-                    <img src="./assets/images/clientImage-1.png" alt="" class="h-10 w-10">
-                    <img src="./assets/images/clientImage-2.png" alt="" class="h-10 w-10">
-                    <img src="./assets/images/clientImage-3.png" alt="" class="h-10 w-10">
-                    <img src="./assets/images/clientImage-4.png" alt="" class="h-10 w-10">
-                    <img src="./assets/images/clientImage-5.png" alt="" class="h-10 w-10">
-                    <img src="./assets/images/clientImage-1.png" alt="" class="h-10 w-10">
-                </div>
-            </div>
+      <div class="container">
+        <div class="text-center pt-4">
+          <h2 class="text-yellow-500 font-semibold uppercase mb-2">
+            OUR CLIENTS
+          </h2>
+          <h3 class="text-3xl font-bold text-gray-800">
+            Temporibus omnis officia
+          </h3>
         </div>
+
+        <div class="client-slider py-12">
+          <div class="client-track">
+            <img
+              src="./assets/images/clientImage-1.png"
+              alt=""
+              class="h-10 w-10"
+            />
+            <img
+              src="./assets/images/clientImage-2.png"
+              alt=""
+              class="h-10 w-10"
+            />
+            <img
+              src="./assets/images/clientImage-3.png"
+              alt=""
+              class="h-10 w-10"
+            />
+            <img
+              src="./assets/images/clientImage-4.png"
+              alt=""
+              class="h-10 w-10"
+            />
+            <img
+              src="./assets/images/clientImage-5.png"
+              alt=""
+              class="h-10 w-10"
+            />
+            <img
+              src="./assets/images/clientImage-1.png"
+              alt=""
+              class="h-10 w-10"
+            />
+
+            <img
+              src="./assets/images/clientImage-1.png"
+              alt=""
+              class="h-10 w-10"
+            />
+            <img
+              src="./assets/images/clientImage-2.png"
+              alt=""
+              class="h-10 w-10"
+            />
+            <img
+              src="./assets/images/clientImage-3.png"
+              alt=""
+              class="h-10 w-10"
+            />
+            <img
+              src="./assets/images/clientImage-4.png"
+              alt=""
+              class="h-10 w-10"
+            />
+            <img
+              src="./assets/images/clientImage-5.png"
+              alt=""
+              class="h-10 w-10"
+            />
+            <img
+              src="./assets/images/clientImage-1.png"
+              alt=""
+              class="h-10 w-10"
+            />
+
+            <img
+              src="./assets/images/clientImage-1.png"
+              alt=""
+              class="h-10 w-10"
+            />
+            <img
+              src="./assets/images/clientImage-2.png"
+              alt=""
+              class="h-10 w-10"
+            />
+            <img
+              src="./assets/images/clientImage-3.png"
+              alt=""
+              class="h-10 w-10"
+            />
+            <img
+              src="./assets/images/clientImage-4.png"
+              alt=""
+              class="h-10 w-10"
+            />
+            <img
+              src="./assets/images/clientImage-5.png"
+              alt=""
+              class="h-10 w-10"
+            />
+            <img
+              src="./assets/images/clientImage-1.png"
+              alt=""
+              class="h-10 w-10"
+            />
+
+            <img
+              src="./assets/images/clientImage-1.png"
+              alt=""
+              class="h-10 w-10"
+            />
+            <img
+              src="./assets/images/clientImage-2.png"
+              alt=""
+              class="h-10 w-10"
+            />
+            <img
+              src="./assets/images/clientImage-3.png"
+              alt=""
+              class="h-10 w-10"
+            />
+            <img
+              src="./assets/images/clientImage-4.png"
+              alt=""
+              class="h-10 w-10"
+            />
+            <img
+              src="./assets/images/clientImage-5.png"
+              alt=""
+              class="h-10 w-10"
+            />
+            <img
+              src="./assets/images/clientImage-1.png"
+              alt=""
+              class="h-10 w-10"
+            />
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- client Section end -->
 
     <!-- blog section start -->
     <section class="py-12">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="text-yellow-500 font-semibold uppercase mb-2 ">BLOG</h2>
-                <h3 class="text-3xl font-bold text-gray-800">Recent posts from our Blog</h3>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8">
-                <div class="card3">
-                    <img src="./assets/images/blogImage-1.png" alt="">
-                    <small class="text-left flex justify-start py-2">Tue, September 15</small>
-
-                    <h2 class="text-left">Dui faucibus cursus est pellentesque.</h2>
-                    <div class="flex gap-5">
-                        <a href=""
-                            class="text-sm text-yellow-500 my-2 no-underline flex items-center gap-1">
-                            Read more
-                            <span class="iconify" data-icon="mdi:arrow-right"></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="card3">
-                    <img src="./assets/images/blogImage-2.png" alt="">
-                    <small class="text-left flex justify-start py-2">Tue, September 15</small>
-                    <h2 class="text-left">Dui faucibus cursus est pellentesque.</h2>
-                    <div class="flex gap-5">
-                        <a href=""
-                            class="text-sm text-yellow-500 my-2 no-underline flex items-center gap-1">
-                            Read more
-                            <span class="iconify" data-icon="mdi:arrow-right"></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="card3">
-                    <img src="./assets/images/blogImage-3.png" alt="">
-                    <small class="text-left flex justify-start py-2">Tue, September 15</small>
-
-                    <h2 class="text-left">Dui faucibus cursus est pellentesque.</h2>
-                    <div class="flex gap-5">
-                        <a href=""
-                            class="text-sm text-yellow-500 my-2 no-underline flex items-center gap-1">
-                            Read more
-                            <span class="iconify" data-icon="mdi:arrow-right"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="text-center">
+          <h2 class="text-yellow-500 font-semibold uppercase mb-2">BLOG</h2>
+          <h3 class="text-3xl font-bold text-gray-800">
+            Recent posts from our Blog
+          </h3>
         </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8">
+          <div class="card3">
+            <img src="./assets/images/blogImage-1.png" alt="" />
+            <small class="text-left flex justify-start py-2"
+              >Tue, September 15</small
+            >
+
+            <h2 class="text-left">Dui faucibus cursus est pellentesque.</h2>
+            <div class="flex gap-5">
+              <a
+                href=""
+                class="text-sm text-yellow-500 my-2 no-underline flex items-center gap-1"
+              >
+                Read more
+                <span class="iconify" data-icon="mdi:arrow-right"></span>
+              </a>
+            </div>
+          </div>
+          <div class="card3">
+            <img src="./assets/images/blogImage-2.png" alt="" />
+            <small class="text-left flex justify-start py-2"
+              >Tue, September 15</small
+            >
+            <h2 class="text-left">Dui faucibus cursus est pellentesque.</h2>
+            <div class="flex gap-5">
+              <a
+                href=""
+                class="text-sm text-yellow-500 my-2 no-underline flex items-center gap-1"
+              >
+                Read more
+                <span class="iconify" data-icon="mdi:arrow-right"></span>
+              </a>
+            </div>
+          </div>
+          <div class="card3">
+            <img src="./assets/images/blogImage-3.png" alt="" />
+            <small class="text-left flex justify-start py-2"
+              >Tue, September 15</small
+            >
+
+            <h2 class="text-left">Dui faucibus cursus est pellentesque.</h2>
+            <div class="flex gap-5">
+              <a
+                href=""
+                class="text-sm text-yellow-500 my-2 no-underline flex items-center gap-1"
+              >
+                Read more
+                <span class="iconify" data-icon="mdi:arrow-right"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- blog section end -->
 
-
     <!-- contact section start -->
     <section class="py-12">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="text-yellow-500 font-semibold uppercase mb-2 ">CONTACT</h2>
-                <h3 class="text-3xl font-bold text-gray-800">CONTACT US</h3>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8">
-                <div>
-                    <div class="grid grid-cols-2 gap-5 text-left p-6">
-                        <div class="">
-                            <img src="./assets/images/contactIcon-1.png" alt="" class="w-8">
-                            <strong class="text-gray-800 text-2xl font-semibold">Address</strong>
-                            <small class="text-gray-500">House-22, Road-04 <br> ,Nikunja-02, Dhaka - 1229</small>
-                        </div>
-                        <div class="">
-                            <img src="./assets/images/contactIcon-2.png" alt="" class="w-8 ">
-                            <strong class="text-gray-800 text-2xl font-semibold">Call Us</strong>
-                            <small class="text-gray-500">01914-075507</small>
-                        </div>
-                        <div class="">
-                            <img src="./assets/images/contactIcon-3.png" alt="" class="w-8 h-8">
-                            <strong class="text-gray-800 text-2xl font-semibold">Email Us</strong>
-                            <small class="text-gray-500">hello@tradex.limited <br> sales@tradex.limited</small>
-                        </div>
-                        <div class="">
-                            <img src="./assets/images/contactIcon-4.png" alt="" class="w-8 h-8">
-                            <strong class="text-gray-800 text-2xl font-semibold">Open Hours</strong>
-                            <small class="text-gray-500">Monday - Saturday <br> 10:00AM - 07:00PM</small>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="max-w-lg mx-auto bg-white p-6 ">
-                        <h2 class="text-2xl font-semibold text-center mb-4">Contact Us</h2>
-
-                        <form>
-                            <div class="flex gap-4">
-                                <!-- Name Field -->
-                                <div class="mb-4 w-1/2">
-                                    <input type="text" id="name" name="name" placeholder="Enter your name"
-                                        class="mt-1 w-full p-2 border border-gray-300">
-                                </div>
-
-                                <!-- Email Field -->
-                                <div class="mb-4 w-1/2">
-                                    <input type="email" id="email" name="email" placeholder="Enter your email"
-                                        class="mt-1 w-full p-2 border border-gray-300 ">
-                                </div>
-                            </div>
-
-                            <!-- Subject Field -->
-                            <div class="mb-4">
-                                <input type="text" id="subject" name="subject" placeholder="Enter the subject"
-                                    class="mt-1 w-full p-2 border border-gray-300 ">
-                            </div>
-
-                            <!-- Message Field -->
-                            <div class="mb-4">
-                                <textarea id="message" name="message" rows="4" placeholder="Write your message here..."
-                                    class="mt-1 w-full p-2 border border-gray-300 "></textarea>
-                            </div>
-
-                            <!-- Submit Button -->
-                            <button type="submit" class=" btn flex justify-center items-center">
-                                Submit
-                            </button>
-                        </form>
-                    </div>
-
-                </div>
-            </div>
+      <div class="container">
+        <div class="text-center">
+          <h2 class="text-yellow-500 font-semibold uppercase mb-2">CONTACT</h2>
+          <h3 class="text-3xl font-bold text-gray-800">CONTACT US</h3>
         </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8">
+          <div>
+            <div class="grid grid-cols-2 gap-5 text-left p-6">
+              <div class="">
+                <img
+                  src="./assets/images/contactIcon-1.png"
+                  alt=""
+                  class="w-8"
+                />
+                <strong class="text-gray-800 text-2xl font-semibold"
+                  >Address</strong
+                >
+                <small class="text-gray-500"
+                  >House-22, Road-04 <br />
+                  ,Nikunja-02, Dhaka - 1229</small
+                >
+              </div>
+              <div class="">
+                <img
+                  src="./assets/images/contactIcon-2.png"
+                  alt=""
+                  class="w-8"
+                />
+                <strong class="text-gray-800 text-2xl font-semibold"
+                  >Call Us</strong
+                >
+                <small class="text-gray-500">01914-075507</small>
+              </div>
+              <div class="">
+                <img
+                  src="./assets/images/contactIcon-3.png"
+                  alt=""
+                  class="w-8 h-8"
+                />
+                <strong class="text-gray-800 text-2xl font-semibold"
+                  >Email Us</strong
+                >
+                <small class="text-gray-500"
+                  >hello@tradex.limited <br />
+                  sales@tradex.limited</small
+                >
+              </div>
+              <div class="">
+                <img
+                  src="./assets/images/contactIcon-4.png"
+                  alt=""
+                  class="w-8 h-8"
+                />
+                <strong class="text-gray-800 text-2xl font-semibold"
+                  >Open Hours</strong
+                >
+                <small class="text-gray-500"
+                  >Monday - Saturday <br />
+                  10:00AM - 07:00PM</small
+                >
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="max-w-lg mx-auto bg-white p-6">
+              <h2 class="text-2xl font-semibold text-center mb-4">
+                Contact Us
+              </h2>
+
+              <form>
+                <div class="flex gap-4">
+                  <!-- Name Field -->
+                  <div class="mb-4 w-1/2">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Enter your name"
+                      class="mt-1 w-full p-2 border border-gray-300"
+                    />
+                  </div>
+
+                  <!-- Email Field -->
+                  <div class="mb-4 w-1/2">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Enter your email"
+                      class="mt-1 w-full p-2 border border-gray-300"
+                    />
+                  </div>
+                </div>
+
+                <!-- Subject Field -->
+                <div class="mb-4">
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Enter the subject"
+                    class="mt-1 w-full p-2 border border-gray-300"
+                  />
+                </div>
+
+                <!-- Message Field -->
+                <div class="mb-4">
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    placeholder="Write your message here..."
+                    class="mt-1 w-full p-2 border border-gray-300"
+                  ></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button
+                  type="submit"
+                  class="btn flex justify-center items-center"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- contact section end -->
 
-
-
     <!-- Join Our Newsletter section start -->
     <section class="bg-gray-100 py-12">
-        <div class="container">
-            <div class="text-center">
-                <h3 class="text-3xl font-bold text-gray-800">Join Our Newsletter</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis pharetra commo</p>
-                <div class="flex justify-center items-center pt-4">
-                    <div class="relative w-full max-w-lg">
-                        <input 
-                            type="email" 
-                            id="email" 
-                            name="email" 
-                            class="w-full sm:w-2/3 h-12 pl-4 pr-28 border border-gray-300 bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                        >
-                
-                        <button 
-                            class="absolute right-0 top-0 h-full px-5 bg-primary text-white font-medium rounded-r-lg hover:bg-primary-dark transition duration-300 btn text-black font-small h-11 transform">
-                            Subscribe
-                        </button>
-                    </div>
-                </div>
-                
+      <div class="container">
+        <div class="text-center">
+          <h3 class="text-3xl font-bold text-gray-800">Join Our Newsletter</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis
+            pharetra commo
+          </p>
+          <div class="flex justify-center items-center pt-4">
+            <div class="relative w-full max-w-lg">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="w-full sm:w-2/3 h-12 pl-4 pr-28 border border-gray-300 bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+              />
+
+              <button
+                class="absolute right-0 top-0 h-full px-5 bg-primary text-white font-medium rounded-r-lg hover:bg-primary-dark transition duration-300 btn text-black font-small h-11 transform"
+              >
+                Subscribe
+              </button>
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- Join Our Newsletter section end -->
 
-
     <!-- footer section start -->
     <section class="py-12 text-white">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-wrap justify-between gap-8">
-                <!-- Logo & Contact Info -->
-                <div class="w-full md:w-1/4 text-center md:text-left">
-                    <a href="#">
-                        <img src="./assets/images/logo.png" alt="Logo" class="w-32 mx-auto md:mx-0">
-                    </a>
-                    <p class="text-sm mt-4">Aro9 Adam Street</p>
-                    <p class="text-sm">NY 530065, USA</p>
-                    <div class="pt-6">
-                        <p class="text-sm"><span class="font-bold">Phone:</span> +8801795929461</p>
-                        <p class="text-sm"><span class="font-bold">Email:</span> info@gmail.com</p>
-                    </div>
-                    <!-- Social Icons -->
-                    <div class="flex justify-center md:justify-start gap-2 mt-4">
-                        <div class="w-8 h-8 bg-yellow-500 flex justify-center items-center rounded-full">
-                            <img src="./assets/images/socialIcon-1.png" alt="" class="w-1/2">
-                        </div>
-                        <div class="w-8 h-8 bg-yellow-500 flex justify-center items-center rounded-full">
-                            <img src="./assets/images/socialIcon-2.png" alt="" class="w-1/2">
-                        </div>
-                        <div class="w-8 h-8 bg-yellow-500 flex justify-center items-center rounded-full">
-                            <img src="./assets/images/socialIcon-3.png" alt="" class="w-1/2">
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- Useful Links & Services -->
-                <div class="w-full md:w-2/3 flex flex-wrap justify-between">
-                    <div class="w-1/2 md:w-1/4 text-center md:text-left">
-                        <strong class="text-lg">Useful Links</strong>
-                        <div class="flex flex-col mt-4 space-y-2">
-                            <a href="#" class="text-sm text-gray-400 hover:text-yellow-400">Home</a>
-                            <a href="#" class="text-sm text-gray-400 hover:text-yellow-400">About Us</a>
-                            <a href="#" class="text-sm text-gray-400 hover:text-yellow-400">Services</a>
-                            <a href="#" class="text-sm text-gray-400 hover:text-yellow-400">Terms of Service</a>
-                            <a href="#" class="text-sm text-gray-400 hover:text-yellow-400">Privacy Policy</a>
-                        </div>
-                    </div>
-                    <div class="w-1/2 md:w-1/4 text-center md:text-left">
-                        <strong class="text-lg">Our Services</strong>
-                        <div class="flex flex-col mt-4 space-y-2">
-                            <a href="#" class="text-sm text-gray-400 hover:text-yellow-400">Web Design</a>
-                            <a href="#" class="text-sm text-gray-400 hover:text-yellow-400">Web Development</a>
-                            <a href="#" class="text-sm text-gray-400 hover:text-yellow-400">SEO Optimization</a>
-                            <a href="#" class="text-sm text-gray-400 hover:text-yellow-400">Marketing Strategy</a>
-                        </div>
-                    </div>
-                </div>
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-between gap-8">
+          <!-- Logo & Contact Info -->
+          <div class="w-full md:w-1/4">
+            <a href="#">
+              <img
+                src="./assets/images/logo.png"
+                alt="Logo"
+                class="w-32 mx-auto md:mx-0"
+              />
+            </a>
+            <p class="text-sm mt-4">Aro9 Adam Street</p>
+            <p class="text-sm">NY 530065, USA</p>
+            <div class="pt-6">
+              <p class="text-sm">
+                <span class="font-bold">Phone:</span> +8801795929461
+              </p>
+              <p class="text-sm">
+                <span class="font-bold">Email:</span> info@gmail.com
+              </p>
             </div>
+            <!-- Social Icons -->
+            <div class="flex gap-2 mt-4">
+              <div
+                class="w-8 h-8 bg-yellow-500 flex justify-center items-center rounded-full"
+              >
+                <img
+                  src="./assets/images/socialIcon-1.png"
+                  alt=""
+                  class="w-1/2"
+                />
+              </div>
+              <div
+                class="w-8 h-8 bg-yellow-500 flex justify-center items-center rounded-full"
+              >
+                <img
+                  src="./assets/images/socialIcon-2.png"
+                  alt=""
+                  class="w-1/2"
+                />
+              </div>
+              <div
+                class="w-8 h-8 bg-yellow-500 flex justify-center items-center rounded-full"
+              >
+                <img
+                  src="./assets/images/socialIcon-3.png"
+                  alt=""
+                  class="w-1/2"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Useful Links & Services -->
+          <div class="w-full md:w-2/3 flex flex-wrap justify-between">
+            <div class="w-1/2 md:w-1/4">
+              <strong class="text-lg">Useful Links</strong>
+              <div class="flex flex-col mt-4 space-y-2">
+                <a
+                  href="#"
+                  class="text-sm text-gray-400 no-underline text-start hover:text-yellow-400"
+                  >About Us</a
+                >
+                <a
+                  href="#"
+                  class="text-sm text-gray-400 no-underline hover:text-yellow-400"
+                  >Home</a
+                >
+                <a
+                  href="#"
+                  class="text-sm text-gray-400 no-underline hover:text-yellow-400"
+                  >Services</a
+                >
+                <a
+                  href="#"
+                  class="text-sm text-gray-400 no-underline hover:text-yellow-400"
+                  >Terms of Service</a
+                >
+                <a
+                  href="#"
+                  class="text-sm text-gray-400 no-underline hover:text-yellow-400"
+                  >Privacy Policy</a
+                >
+              </div>
+            </div>
+            <div class="w-1/2 md:w-1/4">
+              <strong class="text-lg">Our Services</strong>
+              <div class="flex flex-col mt-4 space-y-2">
+                <a
+                  href="#"
+                  class="text-sm text-gray-400 no-underline hover:text-yellow-400"
+                  >Web Design</a
+                >
+                <a
+                  href="#"
+                  class="text-sm text-gray-400 no-underline hover:text-yellow-400"
+                  >Web Development</a
+                >
+                <a
+                  href="#"
+                  class="text-sm text-gray-400 no-underline hover:text-yellow-400"
+                  >SEO Optimization</a
+                >
+                <a
+                  href="#"
+                  class="text-sm text-gray-400 no-underline hover:text-yellow-400"
+                  >Marketing Strategy</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-    
+
     <!-- footer section end -->
 
-
     <script src="./assets/js/scripts.js"></script>
-</body>
-
-
+  </body>
 </html>
